@@ -2,12 +2,12 @@ import Header from "../components/Header";
 import { Outlet } from "react-router-dom";
 import Background from "../../assets/2656211.jpg"
 import Footer from "../components/Footer";
-const Layout = () => {
+const ProductLayout = () => {
     return (
         <div>
             <Header/>
             <main>
-                <img src={Background} alt="" className="w-screen"/>
+                <img src={Background} alt="" className="w-screen blur-sm"/>
                 <div>
                     <Outlet />
                 </div>
@@ -17,4 +17,4 @@ const Layout = () => {
     )
 }
 
-export default Layout
+export default ProductLayout
